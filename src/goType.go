@@ -14,9 +14,15 @@ func main() {
 	var b string
 	var c byte
 	var d []byte
-	var e [1]bool     // 以上都是取默认值
-	var f 文本 = "我是中文" // 使用别名
-	g := "哈哈"         //  使用 := 和 不规定数据类型 自动推断
+	var e [1]bool            // 以上都是取默认值
+	var f 文本 = "我是中文"        // 使用别名
+	g := "哈哈"                //  使用 := 和 不规定数据类型 自动推断
+	h, _, i, j := 1, 2, 3, 4 // _代表的空位符号
+	var m float32 = 100.1
+	n := int(m)
+	var r bool = true
+	var t int
+	// t := int(r)  // bool不能转为int或者float
 	fmt.Println(math.MinInt8)
 	fmt.Println(math.MaxInt64)
 	fmt.Println(a)
@@ -26,4 +32,6 @@ func main() {
 	fmt.Println(e)
 	fmt.Println(f)
 	fmt.Println(g)
+	fmt.Println(h, i, j)
+	fmt.Println(m, n, r, t)
 }
