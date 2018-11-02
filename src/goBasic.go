@@ -2,10 +2,20 @@
 package main
 
 // 导入其他的包
-import "fmt"
+import (
+    "fmt"
+    // "io"
+    // "os"
+    // "time"
+)
 
 // 常量的定义
 const PI = 3.14
+
+const (
+    const1 = "1"
+    const2 = 2
+)
 
 // 全部变量的申明和赋值
 var name = "faith"
