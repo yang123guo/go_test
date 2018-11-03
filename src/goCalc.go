@@ -8,6 +8,14 @@ var a = ^1                  // 一元运算符
 var b = 1 ^ 2               // 二元运算符
 var c = 1 << 10 << 10 >> 10 // 右移 2的10次
 
+const ( // 根据iota和右移命名进制
+	_          = iota
+	KB float64 = 1 << (iota * 10)
+	MB
+	GB
+	TB
+)
+
 /*
 6:      0110
 11:     1011
@@ -27,4 +35,9 @@ func main() {
 	fmt.Println(c)
 	fmt.Println(6&11, 6|11, 6^11, 6&^11)
 	// fmt.Println(a && b, a || b)
+	fmt.Println(KB, MB, GB, TB)
+	m := 1
+	var p *int = &m // 有个p指向int的指针
+	//0xc00006e030 取地址   1 取值
+	fmt.Println(p, *p)
 }
