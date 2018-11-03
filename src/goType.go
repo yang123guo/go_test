@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"math"
+	"strconv"
 )
 
 type (
@@ -22,6 +23,9 @@ func main() {
 	n := int(m)
 	var r bool = true
 	var t int
+	var s int = 65
+	w := string(s)
+	v := strconv.Itoa(s) // 转化为字符串 65
 	// t := int(r)  // bool不能转为int或者float
 	fmt.Println(math.MinInt8)
 	fmt.Println(math.MaxInt64)
@@ -34,4 +38,5 @@ func main() {
 	fmt.Println(g)
 	fmt.Println(h, i, j)
 	fmt.Println(m, n, r, t)
+	fmt.Println(s, w, v)
 }
