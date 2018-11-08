@@ -15,4 +15,8 @@ func main() {
 	slice5 := make([]int, 3, 10) // int 类型 3元素个数len  容量(最大10，可以小于等于) 超出以后会扩容 系统重新分配，但是效率低
 	fmt.Println(slice1)
 	fmt.Println(len(slice5), cap(slice5))
+
+	b := []byte{'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k'}
+	slice_b1 = b[2:5]
+	fmt.Println(slice_b1)
 }
